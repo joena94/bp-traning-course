@@ -1,0 +1,721 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquareR';
+    font-weight: 400;
+    src: url(../fonts/NanumSquareR.eot),
+        url(../fonts/NanumSquareR.eoft?#iefix) format('embedded-opentype'),
+        url(../fonts/NanumSquareR.woff) format('woff'),
+        url(../fonts/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquareEB';
+    font-weight: 800;
+    src: url(../fonts/NanumSquareEB.eot),
+        url(../fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NanumSquareEB.woff) format('woff'),
+        url(../fonts/NanumSquareEB.ttf) format('truetype');
+}
+
+
+/*=====================================================*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.st0 {
+    fill: #2a2a2a;
+}
+
+.sb {
+    -webkit-box-shadow: 5px 20px 30px rgba(124, 124, 124, 0.52);
+    box-shadow: 6px 20px 30px rgba(21, 26, 49, 0.17);
+}
+
+.shadow {
+    background-color: white;
+    -webkit-box-shadow: 0 2px 30px rgba(93, 93, 93, 0.17);
+    box-shadow: 0 2px 30px rgba(32, 37, 62, 0.19);
+    transition: 1s;
+}
+
+::-moz-selection {
+    background: #6D84FE;
+    color: white;
+}
+
+
+::selection {
+    background: #6D84FE;
+    color: white;
+}
+
+/*===================MENU BAR===================*/
+#wrap > .menu-wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#wrap .menu-wrapper .menu-bar {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#wrap .menu-wrapper .menu-bar > h1 {
+    display: inline-block;
+    width: 230px;
+    height: 80px;
+    float: left;
+    line-height: 80px;
+    padding-top: 20px;
+
+}
+
+#wrap .menu-wrapper .menu-bar > nav {
+    float: right;
+}
+
+#wrap .menu-wrapper .menu-bar > nav > ul {}
+
+#wrap .menu-wrapper .menu-bar > nav > ul > li {
+    float: left;
+}
+
+#wrap .menu-wrapper .menu-bar > nav > ul > li > a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'NanumSquareEB';
+    margin-right: 55px;
+}
+
+#wrap .menu-wrapper .menu-bar > nav > ul > li > a:hover{
+    color: #6D84FE;
+    transition: .3s;
+}
+
+#wrap .menu-wrapper .menu-bar > nav > ul > li > a:active{
+    color: #6D84FE;
+    transition: .3s;
+}
+
+
+/*===================hacking&security training system===================*/
+
+
+
+#hacking-system-wrapper {
+    width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 230px;
+}
+
+#hacking-system-wrapper h2 {
+    font-size: 40px;
+    font-family: 'NanumSquareEB';
+           margin-bottom: 100px;
+
+}
+
+#hacking-system-wrapper .tab-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+#hacking-system-wrapper .tab-area {
+    width: 1350px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.tabs ul {
+    width: 259px;
+    margin: 0 auto;
+}
+
+.tabs ul li {
+    float: left;
+    height: 31px;
+    width: 128px;
+    line-height: 31px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.tabs ul li:nth-child(2) {
+    border-right: none;
+}
+
+.tabs ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    font-family: 'NanumSquareEB';
+
+    /*--Gives the bevel look with a 1px white border inside the list item--*/
+}
+
+.active a{
+    color: #6D84FE;
+}
+
+.active{
+    position: relative;
+}
+
+.active:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.tab-container {
+    text-align: center;
+}
+
+.tab-container .tab-content .company-introduce-wrap {
+    width: 100%;
+    height: 600px;
+    text-align: left;
+}
+
+.tab-container .tab-content .company-introduce-wrap .intro-image-wrap {
+    float: left;
+    width: 500px;
+
+}
+
+.tab-container .tab-content .company-introduce-wrap .intro-image-wrap span {
+    display: block;
+	background: url('../images/hacking_all.png') no-repeat -17px -56px;
+	width: 500px;
+	height: 500px;
+    border-radius: 500px;
+}
+
+.tab-container .tab-content .company-introduce-wrap .intro-story-wrap {
+    padding-top: 150px;
+    width: 770px;
+    height: 100%;
+    float: right;
+}
+
+.tab-container .tab-content .company-introduce-wrap .intro-story-wrap h3 {
+    font-family: 'NanumSquareEB';
+    font-size: 30px;
+    text-align: left;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.company-introduce-wrap .intro-story-wrap h3 strong {
+    color: #6D84FE;
+    font-size: 44px;
+}
+
+.company-introduce-wrap .intro-story-wrap p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/********tab-container tab2 table*******
+========================================***/
+
+table {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 3px solid #6D84FE;
+    border-bottom: 3px solid #6D84FE;
+}
+
+table tr {}
+
+table tr td {
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+
+/*표 날짜*/
+table tr td:nth-child(1) {
+    font-family: 'NanumSquareEB';
+    width: 150px;
+    background-color: #EAEAEA;
+    border-left: none;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding: 30px;
+    letter-spacing: -1px;
+}
+
+/*표 공지사항 내용*/
+table tr td:nth-child(2) {
+    background-color: white;
+    line-height: 25px;
+    padding: 20px;
+}
+
+/********트레이닝코스 신청********************
+========================================***/
+
+
+#training-course-card-wrap {
+    height: auto;
+}
+
+#training-course-card-wrap .training-course-card-center {
+    width: 1266px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#training-course-card-wrap .training-course-card-center > h3 {
+    font-family: 'NanumSquareEB';
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*신청 카드*/
+
+#training-course-card-wrap .training-course-card-center .training-card-wrap {
+    display: block;
+    width: 400px;
+    height: 75 0px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+#training-course-card-wrap .training-course-card-center .training-card-wrap:nth-child(3n+4) {
+    margin-right: 0px;
+}
+
+/*강의 신청 카드 안에 내용들*/
+
+/* 강의 날짜*/
+#training-course-card-wrap .training-course-card-center .training-card-wrap .course-day {
+    margin-bottom: 20px;
+}
+
+/* 강사 이름*/
+.training-card-wrap .teacher-name {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #6D84FE;
+    position: relative;
+    color: white;
+    line-height: 25px;
+    padding-top: 25px;
+    margin: 30px auto;
+}
+
+/* 강의 제목*/
+.training-card-wrap .course-title {
+    display: block;
+    width: 330px;
+    height: 75px;
+    font-size: 30px;
+    font-family: 'NanumSquareEB';
+    line-height: 36px;
+    color: #6D84FE;
+    overflow: hidden;
+    word-break: break-all;
+    margin-bottom: 30px;
+}
+
+/* 강의 내용*/
+.training-card-wrap .course-content {
+    display: -webkit-box;
+    width: 330px;
+    height: 120px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    -webkit-line-clamp:5;
+    -webkit-box-orient:vertical;
+}
+
+/* 강의 내용 자세히보기*/
+.training-card-wrap .contents-view {
+    display: block;
+    background-color: #efefef;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+
+.training-card-wrap .applications-wrap {
+    margin-bottom: 30px;
+}
+
+/*현재 신청 인원*/
+
+.training-card-wrap .applications-wrap .applications-current {
+    float: left;
+}
+
+/*최대 신청 인원*/
+
+.applications-wrap .applications-maximum {
+    float: right;
+}
+
+.applications-wrap span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.applications-wrap p {
+    font-size: 40px;
+    font-family: 'NanumSquareEB';
+}
+
+.training-card-wrap .course-amount {
+    display: block;
+    font-size: 30px;
+    font-family: 'NanumSquareEB';
+    color: #6D84FE;
+    margin-bottom: 30px;
+}
+
+.training-card-wrap .course-button {
+    display: block;
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #6D84FE;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+     -webkit-box-shadow: 5px 15px 30px rgba(95, 114, 217, 0.57);
+    box-shadow: 5px 15px 30px rgba(95, 114, 217, 0.57);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.training-card-wrap .course-button:hover {
+    box-shadow: none;
+}
+
+/*footer*/
+
+#hacking-footer-wrap {
+    width: 100%;
+    height: 500px;
+    background-color: #6D84FE;
+
+}
+
+#hacking-footer-wrap .hacking-footer-center {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    
+}
+
+
+#hacking-footer-wrap .hacking-footer-center .hacking-if-area {
+    float:left;
+    margin-right: 150px;
+   
+}
+
+#hacking-footer-wrap .hacking-footer-center .hacking-if-area:last-child {
+    margin-right: 0px;
+   
+}
+
+.hacking-footer-center .hacking-if-area span {
+    display: block;
+    font-family: 'NanumSquareEB';
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hacking-footer-center .hacking-if-area p {
+    color: #CBD7FF;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.hacking-footer-center .hacking-if-area .hacking-if-margin {
+    margin-bottom: 50px;
+}
+
+.hacking-footer-center .hacking-if-area > a {
+    font-family: 'NanumSquareEB';
+    display: block;
+    color: white;
+    margin-top: 30px;
+
+}
+
+#hacking-footer-wrap .footer-copyright {
+    text-align: center;
+    background-color: #6D84FE;
+    color: #CBD7FF;
+    padding: 30px 0;
+}
+
+/*********************everspin신청하기페이지***********************/
+/*********************왼쪽 페이지/ 강의 내용 요약*******************/
+
+#hacking-signup-form-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 230px;
+    height: auto;
+}
+
+/**************Everspin Training 신청하기 타이틀*************************/
+
+#hacking-signup-form-wrap h2 {
+    font-size: 40px;
+    font-family: 'NanumSquareEB';
+    margin-bottom: 60px;
+}
+
+#hacking-signup-form-wrap .hacking-signup-form {
+    position: relative;
+}
+
+/**************Everspin Training 강의 내용*************************/
+#hacking-signup-form-wrap .hacking-signup-form .hacking-signup-left-wrap {
+    display: block;
+    width: 740px;
+    height: auto;
+    background-color: #6D84FE;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 200px;
+    padding: 150px 70px 100px 70px;
+    color: white;
+    text-align: left;
+    line-height: 27px;
+/*    -moz-box-shadow: 0px 10px 17px #000000;
+-webkit-box-shadow: 0px 10px 17px #000000;*/
+box-shadow: 0px 15px 30px rgba(68, 82, 154, 0.5);
+}
+
+.hacking-signup-form .hacking-signup-left-wrap .hakcing-logo-mini {
+    position: absolute;
+    background: url('../images/hacking_all.png') no-repeat -5px -5px;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 20px;
+}
+
+/* 에버스핀 신청하기 - 강의 내용 설명*/
+/* 에버스핀 신청하기 - 강의 제목*/
+.hacking-signup-form .hacking-signup-left-wrap .hacking-content-title{
+    font-family: 'NanumSquareEB';
+    font-size: 36px;
+    margin-bottom: 35px;
+    line-height: 45px;
+}
+
+/* 에버스핀 신청하기 - 강의 소개*/
+.hacking-signup-form .hacking-signup-left-wrap .hacking-content-small-title{
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-family: 'NanumSquareEB';
+    position: relative;
+}
+
+.hacking-signup-form .hacking-signup-left-wrap .content-line{
+    width: 100%;
+    height: 2px;
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+}
+
+.hacking-signup-form .hacking-signup-left-wrap .hakcing-content{
+    display: block;
+    line-height: 27px;
+    word-break: keep-all;
+    color: #f0f0f0;
+    margin-bottom: 70px;
+}
+
+
+/*************신청하기 form**********/
+
+.hacking-signup-form .hacking-signup-right-wrap {
+    width: 460px;
+    height: 750px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    padding: 100px 0 0 40px;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    margin-right: -600px;
+    box-shadow: 0px 20px 40px rgba(70, 70, 70, 0.28);
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .page-back {
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .hacking-logo-title {
+    display: block;
+    background: url('../images/hacking_all.png') no-repeat -65px -8px;
+    width: 300px;
+    height: 33px;
+    margin-left: 10px;
+    margin-bottom: 45px;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form fieldset {
+    width: 340px;
+}
+
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form .form-area {
+    width: 380px;
+    position: relative;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form input[type="text"] {
+    width: 340px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+    background-color: #efefef;
+    border: none;
+    font-family: 'NanumSquareR';
+    margin-bottom: 5px;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form input[type="email"] {
+    width: 340px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+    background-color: #efefef;
+    border: none;
+    font-family: 'NanumSquareR';
+    margin-bottom: 5px;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form input[type="submit"] {
+    width: 360px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #6D84FE;
+    color: white;
+    border: none;
+    font-family: 'NanumSquareEB';
+    margin-top: 20px;
+    -webkit-box-shadow: 3px 15px 30px rgba(95, 114, 217, 0.6);
+    box-shadow: 3px 15px 30px rgba(95, 114, 217, 0.6);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form input[type="submit"]:hover{
+    box-shadow: none;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form select{
+    width: 360px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+    background-color: #efefef;
+    border: none;
+    font-family: 'NanumSquareR';
+    margin-bottom: 5px;
+    color: #CCCCCC;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form select option{
+    color: black;
+}
+
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form label {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+
+.error {
+    color: #FC7070;
+    font-size: 16.5px;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form input::placeholder {
+    color: #bcbcbc;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form input:focus{
+    border: 1px solid #6D84FE;
+}
+
+.hacking-signup-form .hacking-signup-right-wrap .post-form p {
+    width: 390px;
+    font-size: 16.5px;
+    text-align: left;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+{# static 파일 (css, js, image 등) 을 불러오기 위함 #}
+{% load static %}
+
+{# 금액 표기시 3자리마다 , 를 찍기 위함 #}
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>HACKING COURSE</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="robots" content="all">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:title" content="HACKING COURSE">
+    <meta property="og:url" content="http://www.">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- open latest edge
+    ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon
+    ================================================== -->
+    <link rel="shortcut icon" href="{% static 'images/hacking.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/hacking.ico' %}" type="image/x-icon">
+
+    <!-- css
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" media="( min-width:1280px ) and ( max-width:1365px )" href="{% static 'css/1366_size.css' %}">
+    <link rel="stylesheet" media="( min-width:1000px ) and ( max-width:1280px )" href="{% static 'css/1024_size.css' %}">
+</head>
+
+<body>
+    <header id="wrap">
+        <div class="menu-wrapper">
+            <div class="menu-bar">
+                <h1>
+                    <a href="#">
+                        <svg class="hacking-logo" xmlns="http://www.w3.org/2000/svg">
+                            <path class="st0" d="M45 19.6h-6.5v7.5h-2.8V10.3h2.8v6.8H45v-6.8h2.8v16.8H45v-7.5zM64.2 27.1h-3l-1.5-4.6h-5.3l-1.6 4.6h-2.9l5.9-16.8h2.5l5.9 16.8zm-9-7.1h3.7l-1.1-3.4c-.2-.6-.3-1-.4-1.4l-.3-1.2c-.1.2-.1.4-.2.6-.1.2-.1.4-.2.6-.1.2-.1.4-.2.6-.1.2-.1.5-.3.8l-1 3.4zM72.1 10c1.1 0 2.1.1 2.9.4s1.7.8 2.5 1.4L76 14.2c-.6-.6-1.3-.9-1.9-1.1-.6-.2-1.3-.3-2-.3-.5 0-.9.1-1.4.2s-.9.4-1.2.8-.6.9-.9 1.6c-.2.7-.3 1.5-.3 2.6v1.7c0 .9.1 1.6.3 2.3s.5 1.1.8 1.5c.3.4.7.7 1.2.8.5.2.9.3 1.4.3.7 0 1.5-.1 2.2-.4s1.5-.7 2.1-1.4l1.5 2.3c-.5.5-1 .9-1.5 1.2s-1 .5-1.5.7c-.5.2-1 .3-1.5.3s-1 .1-1.4.1c-.9 0-1.7-.1-2.5-.4-.8-.3-1.5-.7-2.1-1.3-.6-.6-1.1-1.3-1.4-2.2-.3-.9-.5-2-.5-3.2v-3c0-1.3.2-2.3.5-3.2.3-.9.8-1.7 1.4-2.3s1.3-1 2.1-1.3 1.7-.5 2.7-.5zM86.6 17.7l6.4 9.4h-3.5l-4.8-7.2-1.5 1.7v5.5h-2.8V10.3h2.8V18l6.2-7.7h3.2l-6 7.4zM95 10.3h2.8v16.8H95V10.3zM101.3 10.3h3.2l5.4 10.2c.2.3.3.7.5 1.2s.4 1 .5 1.5V10.3h2.6v16.8h-3.2l-5.4-10.2-.6-1.2c-.2-.4-.3-.9-.4-1.4v12.8h-2.6V10.3zM123.5 10c.9 0 1.9.1 2.8.4s1.8.8 2.6 1.5l-1.5 2.3c-.6-.5-1.2-.9-1.9-1.1s-1.3-.3-2-.3c-.6 0-1.2.1-1.7.2s-1 .4-1.3.8-.7.9-.9 1.6c-.2.7-.3 1.5-.3 2.6v1.7c0 .9.1 1.7.3 2.3.2.6.5 1.1.9 1.5.4.4.8.7 1.4.8.5.2 1.1.3 1.8.3.5 0 1 0 1.4-.1.4-.1.8-.2 1.2-.4v-4H123v-2.5h6.1v8.2c-.3.2-.7.5-1.2.7-.4.2-.9.4-1.4.5l-1.5.3c-.5.1-1 .1-1.5.1-1 0-1.9-.1-2.8-.4s-1.6-.7-2.2-1.3c-.6-.6-1.1-1.3-1.5-2.2-.4-.9-.5-2-.5-3.2v-3c0-1.3.2-2.3.5-3.2.4-.9.8-1.7 1.5-2.3.6-.6 1.4-1 2.2-1.3.9-.3 1.8-.5 2.8-.5zM143.6 10c1.1 0 2.1.1 2.9.4s1.7.8 2.5 1.4l-1.5 2.3c-.6-.6-1.3-.9-1.9-1.1-.6-.2-1.3-.3-2-.3-.5 0-.9.1-1.4.2s-.9.4-1.2.8-.6.9-.9 1.6c-.2.7-.3 1.5-.3 2.6v1.7c0 .9.1 1.6.3 2.3s.5 1.1.8 1.5c.3.4.7.7 1.2.8.5.2.9.3 1.4.3.7 0 1.5-.1 2.2-.4s1.5-.7 2.1-1.4l1.5 2.3c-.5.5-1 .9-1.5 1.2s-1 .5-1.5.7c-.5.2-1 .3-1.5.3s-1 .1-1.4.1c-.9 0-1.7-.1-2.5-.4-.8-.3-1.5-.7-2.1-1.3-.6-.6-1.1-1.3-1.4-2.2-.3-.9-.5-2-.5-3.2v-3c0-1.3.2-2.3.5-3.2.3-.9.8-1.7 1.4-2.3s1.3-1 2.1-1.3 1.7-.4 2.7-.4zM158 10c.9 0 1.7.1 2.5.4.8.3 1.5.7 2.1 1.3.6.6 1.1 1.3 1.5 2.2.4.9.5 2 .5 3.3V20c0 1.3-.2 2.4-.5 3.4-.4.9-.8 1.7-1.4 2.2-.6.6-1.3 1-2.1 1.3s-1.7.4-2.6.4-1.8-.1-2.6-.4c-.8-.3-1.5-.7-2.1-1.3-.6-.6-1.1-1.3-1.4-2.2-.4-.9-.5-2-.5-3.4v-2.8c0-1.3.2-2.4.5-3.3.4-.9.8-1.7 1.5-2.2.6-.6 1.3-1 2.1-1.3.8-.2 1.6-.4 2.5-.4zm0 14.6c.5 0 1-.1 1.5-.2s.9-.4 1.2-.8c.3-.4.6-.9.8-1.5.2-.6.3-1.4.3-2.4v-2c0-1-.1-1.8-.3-2.4-.2-.6-.5-1.1-.8-1.5s-.8-.6-1.2-.8c-.5-.1-1-.2-1.5-.2s-1 .1-1.5.2-.9.4-1.2.8c-.3.4-.6.9-.8 1.5s-.3 1.4-.3 2.4v2c0 1 .1 1.8.3 2.4.2.6.5 1.1.8 1.5.4.4.8.6 1.2.8s1 .2 1.5.2zM173.5 24.6c.6 0 1.1-.1 1.5-.2.4-.1.8-.4 1-.7.3-.3.5-.8.6-1.4.1-.6.2-1.3.2-2.1v-9.9h2.8v9.9c0 1.4-.1 2.5-.4 3.4-.3.9-.7 1.6-1.2 2.2-.5.6-1.2.9-1.9 1.2-.8.2-1.6.3-2.6.3s-1.9-.1-2.6-.3c-.8-.2-1.4-.6-1.9-1.2s-.9-1.3-1.2-2.2c-.3-.9-.4-2.1-.4-3.4v-9.9h2.8v9.9c0 .8.1 1.5.2 2.1.1.6.3 1 .6 1.4.3.3.6.6 1 .7.4.2.9.2 1.5.2zM188.9 20.3h-3.2V27h-2.8V10.3h6c.8 0 1.5.1 2.2.3s1.2.6 1.6 1c.4.4.8.9 1 1.5.2.6.3 1.2.3 1.8v.9c0 .9-.2 1.7-.6 2.4-.4.7-1 1.3-1.8 1.6l1.5 3.6 1.5 3.6h-3l-2.7-6.7zm-3.2-7.5v5.1h2.6c1.1 0 1.8-.2 2.3-.6s.6-.9.6-1.6V15c0-.7-.2-1.2-.6-1.6-.4-.4-1.1-.6-2.1-.6h-2.8zM202.4 24.6c1 0 1.7-.2 2.2-.6.5-.4.7-.9.7-1.4v-.3c0-.7-.2-1.2-.7-1.5-.5-.3-1.2-.6-2.1-.8-.7-.2-1.3-.3-2-.5s-1.3-.4-1.8-.8-1-.8-1.3-1.4c-.3-.6-.5-1.4-.5-2.3v-.3c0-.5.1-1 .3-1.6s.5-1.1.9-1.5c.4-.5 1-.8 1.7-1.2.7-.3 1.6-.5 2.7-.5.9 0 1.7.1 2.5.3s1.6.6 2.4 1.1l-1.3 2.3c-.6-.4-1.2-.7-1.8-.8-.6-.1-1.1-.2-1.8-.2-.5 0-.9.1-1.3.2s-.7.3-.9.5c-.2.2-.4.4-.5.7s-.2.5-.2.7v.3c0 .4.1.7.3 1 .2.2.4.5.7.6.3.2.7.3 1.1.4.4.1.9.2 1.3.3.9.2 1.7.5 2.3.8.6.3 1.1.7 1.5 1.1.4.4.7.8.8 1.3.2.5.3 1 .3 1.6v.3c0 .9-.2 1.7-.5 2.3-.3.6-.7 1.1-1.3 1.5-.5.4-1.2.7-1.9.8s-1.4.2-2.2.2c-.6 0-1.1-.1-1.7-.2-.5-.1-1.1-.2-1.5-.4-.5-.2-.9-.4-1.3-.6-.4-.2-.8-.5-1.1-.8L198 23c.5.4 1.1.8 1.9 1.1.7.4 1.5.5 2.5.5zM221.1 10.3v2.5h-7.4v4.5h6.9v2.4h-6.9v4.9h7.5v2.5H211V10.3h10.1z" />
+                            <circle class="st0" cx="19.3" cy="18.3" r="10" />
+                            <path transform="rotate(-45.001 19.287 18.324)" d="M5.5 15.9H33v4.8H5.5z" fill="#6D84FE" />
+                            <path d="M7.5 5.3h214v27H7.5z" fill="none" />
+                        </svg>
+                    </a>
+                </h1>
+                <!-- 추후 메뉴 확장을 위함
+				<nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Notice</a></li>
+                    </ul>
+                </nav>
+				-->
+            </div>
+        </div>
+    </header>
+    <section id="hacking-signup-form-wrap">
+        <h2>Hacking Course 신청하기</h2>
+        <div class="hacking-signup-form clearfix">
+            <div class="hacking-signup-left-wrap">
+                <span class="hakcing-logo-mini"></span>
+                <h1 class="hacking-content-title">{{ course.title }}</h1>
+                <div class="content-line"></div>
+                <span class="hacking-content-small-title">강의소개</span>
+                <p class="hakcing-content">{{ course.summary }}</p>
+                <span class="hacking-content-small-title">강의 일정</span>
+                <p class="hakcing-content">{{ course.start_date }} ~ {{ course.end_date }}</p>
+                <span class="hacking-content-small-title">강의 시간</span>
+                <p class="hakcing-content"> {{ course.get_standard_time_in_day }} (점심시간 포함)</p>
+                <span class="hacking-content-small-title">수강 정원</span>
+                <p class="hakcing-content">{{ course.max_people }}명</p>
+                <span class="hacking-content-small-title">현재 수강 신청 인원</span>
+                <p class="hakcing-content">{{ course.current_people }}명</p>
+                <span class="hacking-content-small-title">강의 비용</span>
+                <p class="hakcing-content">{{ course.cost|intcomma }}원</p>
+            </div>
+            <div class="hacking-signup-right-wrap">
+                <a href="{% url 'index' %}" class="page-back">&#60; 뒤로</a>
+                <span class="hacking-logo-title"></span>
+                <form method="POST" class="post-form" name="pform" id="pform">
+                    {% csrf_token %}
+                    <fieldset>
+                        <div class="form-area clearfix">
+							{{ form.name }}
+                            <label for="name" class="error" generated="true"></label>
+                        </div>
+                        <p>*단체 등록 시엔 참가자분들의 성함을 모두 적어주세요.</p>
+
+                        <div class="form-area clearfix">
+							{{ form.group }}
+                            <label for="division" class="error" generated="true"></label>
+                        </div>
+                        <p>*업체명, 학교명 등 소속되신 곳을 적어주세요.</p>
+
+                        <div class="form-area clearfix">
+							{{ form.person_num }}
+                            <label for="personnel" class="error" generated="true"></label>
+                        </div>
+                        <p>*해당 교육의 최대 인원을 확인 하시고 작성 바랍니다.</p>
+
+                        <div class="form-area clearfix">
+                            {{ form.phone }}
+                            <label for="phone" class="error" generated="true"></label>
+                        </div>
+                        <p>*01012345678 형식으로 적어주세요.</p>
+
+                        <div class="form-area clearfix">
+                            {{ form.email }}
+							<label for="email" class="error" generated="true"></label>
+                        </div>
+                        <p>*연락 받으실수 있는 정확한 메일 주소를 적어주세요.</p>
+						<input type="hidden" name="course_pid" value="{{ course.id }}" id="id_course_id">
+						{% if messages %}
+							{% for msg in messages %}
+								<input type="text" name="err_result" style="color:red; background-color:transparent;" value="오류: {{msg}}" readonly>
+								<script>document.getElementsByName("err_result")[0].focus();</script>
+							{% endfor %}						
+						{% endif %}
+                        <input type="submit" id="submit_btn" name="submit_btn" value="신청">
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="hacking-footer-wrap">
+        <div class="hacking-footer-center clearfix">
+            <div class="hacking-if-area">
+                <span>HACKING COURSE</span>
+                <p>블랙펄시큐리티</p>
+                <p>대표이사 음철환</p>
+                <p>사업자 번호 : 000-00-00000</p>
+                <p>통신판매업 신고번호</p>
+                <p class="hacking-if-margin">제 0000-대전유성-00000호</p>
+                <p>대전광역시 유성구 유성대로 796 JS빌딩 4층</p>
+            </div>
+            <div class="hacking-if-area">
+                <span>CONTECT</span>
+                <p>결제 환불 문의 : hello@naver.com</p>
+                <p>전봐번호 : 00-000-0000</p>
+                <p>교육 문의 : hello@naver.com</p>
+            </div>
+            <div class="hacking-if-area">
+                <a href="#">이용 약관</a>
+                <a href="#">개인정보취급방침</a>
+            </div>
+        </div>
+        <p class="footer-copyright">Copyright&#x000A9;HACKING COURSE. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/additional-methods.min.js' %}"></script>
+    <script src="{% static 'js/form_validation.js' %}"></script>
+    <script src="{% static 'js/scroll_shadow.js' %}"></script>
+    <!--
+    <script>
+        function scroll_follow(id) {
+            $(window).scroll(function() //스크롤이 움직일때마다 이벤트 발생
+                {
+                    var position = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다.
+                    $('.hacking-signup-left-wrap').stop().animate({
+                        top: position + "px"
+                    }, 1); //해당 오브젝트 위치값 재설정
+                });
+        }
+        scroll_follow("#scroll");
+
+
+        /*        $(window).scroll(function() {
+                    var scrollTop = $(document).scrollTop();
+                    var scrollBottom = $("body").height() - $(window).height() - $(window).scrollTop();
+                    var left_size = $(".hacking-signup-left-wrap").height();
+                    var bottom_size = left_size - 590;
+                    //console.log( "scrollTop : " + scrollTop );
+                    //console.log( "scrollBo : " + scrollBottom );
+                    //console.log( "left : " + left_size );
+                    if (scrollTop < 200) {
+                        scrollTop=0;
+
+                    }
+                    else if( scrollBottom < bottom_size ){
+                        scrollTop = bottom_size;
+                    }
+                    $(".hacking-signup-right-wrap").stop();
+                    $(".hacking-signup-right-wrap").animate({
+                        "top": scrollTop
+                    });
+                });*/
+    </script>
+    -->
+</body></html>

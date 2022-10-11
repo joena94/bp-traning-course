@@ -1,0 +1,350 @@
+*{margin: 0; border:0; box-sizing:border-box;}
+
+@font-face {
+    font-family: 'NanumSquareR';
+    font-weight: 400;
+    src: url(../font/NanumSquareR.eot),
+        url(../font/NanumSquareR.eoft?#iefix) format('embedded-opentype'),
+        url(../font/NanumSquareR.woff) format('woff'),
+        url(../font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquareEB';
+    font-weight: 800;
+    src: url(../fonts/NanumSquareEB.eot),
+        url(../fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NanumSquareEB.woff) format('woff'),
+        url(../fonts/NanumSquareEB.ttf) format('truetype');
+}
+
+/* .shadow {
+    background-color: white;
+    -webkit-box-shadow: 0 2px 30px rgba(93, 93, 93, 0.17);
+    box-shadow: 0 2px 30px rgba(32, 37, 62, 0.19);
+    transition: 1s;
+} */
+
+html{
+  height: 100%;
+}
+
+body {
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    color: #2a2a2a;
+    background-color: #efefef;
+    letter-spacing: -0.2px;
+    font-size: 18px;
+    font-family: 'NanumSquareR';
+}
+
+a{
+  text-decoration: none;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 10;
+  /* background-color: white; */
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* menu */
+#wrap .menu-wrapper .menu-bar{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+
+#wrap .menu-wrapper .menu-bar .home_logo{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#wrap .menu-wrapper .menu-bar .home_logo a{
+  margin: 0 auto 0 auto;
+  text-decoration: none;
+}
+
+#wrap .menu-wrapper .menu-bar .home_logo img{
+  height: 50px;
+  width: auto;
+  margin-top: 15px;
+}
+
+
+/* article */
+#top_wrapper{
+  height: 100%;
+  background-image: url("../images/code.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#top_wrapper h2{
+  font-size: 50px;
+  color: white;
+  size:3em;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  font-family: 'NanumSquareEB';
+}
+#middle_wrapper{
+  background-color: white;
+  width: 100%;
+  height: 600px;
+}
+#middle_wrapper .middle_wrapper_size{
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("../images/training.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  border: 1px solid transparent;
+}
+#middle_wrapper .middle_wrapper_size .middle_wrapper_text{
+  margin-top: 13%;
+}
+#middle_wrapper .middle_wrapper_size .middle_wrapper_text h3{
+  font-size: 42px;
+  margin-bottom: 10px;
+  font-family: 'NanumSquareEB';
+}
+#middle_wrapper .middle_wrapper_size .middle_wrapper_text span{
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: 'NanumSquareEB';
+}
+#middle_wrapper .middle_wrapper_size .middle_wrapper_text p{
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'NanumSquareEB';
+}
+
+
+/********트레이닝코스 신청********************
+========================================***/
+
+
+#training-course-card-wrap {
+    height: auto;
+}
+
+#training-course-card-wrap .training-course-card-center {
+    width: 1266px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+#training-course-card-wrap .training-course-card-center > h3 {
+    font-family: 'NanumSquareEB';
+    font-size: 22px;
+    margin-bottom: 120px;
+}
+
+/*신청 카드*/
+
+#training-course-card-wrap .training-course-card-center .training-card-wrap {
+    display: block;
+    width: 400px;
+    height: 75 0px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+
+    margin: 0 30px 30px 0;
+}
+
+#training-course-card-wrap .training-course-card-center .training-card-wrap:nth-child(3n+4) {
+    margin-right: 0px;
+}
+
+/*강의 신청 카드 안에 내용들*/
+
+/* 강의 날짜*/
+#training-course-card-wrap .training-course-card-center .training-card-wrap .course-day {
+    margin-bottom: 20px;
+}
+
+
+/* 강사 이름*/
+.training-card-wrap .teacher-name {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #F7BF38;
+    position: relative;
+    color: white;
+    line-height: 25px;
+    padding-top: 25px;
+    margin: 30px auto;
+}
+
+/* 강의 제목*/
+.training-card-wrap .course-title {
+    display: block;
+    width: 330px;
+    height: 75px;
+    font-size: 30px;
+    font-family: 'NanumSquareEB';
+    line-height: 36px;
+    color: #F7BF38;
+    overflow: hidden;
+    word-break: break-all;
+    margin-bottom: 30px;
+}
+
+/* 강의 내용*/
+.training-card-wrap .course-content {
+    display: -webkit-box;
+    width: 330px;
+    height: 120px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    -webkit-line-clamp:5;
+    -webkit-box-orient:vertical;
+}
+
+/* 강의 내용 자세히보기*/
+.training-card-wrap .contents-view {
+    display: block;
+    background-color: #efefef;
+    padding: 10px 0;
+    margin-bottom: 35px;
+    text-decoration: none;
+    color: #333;
+}
+
+.training-card-wrap .applications-wrap {
+    margin-bottom: 30px;
+}
+
+/*현재 신청 인원*/
+
+.training-card-wrap .applications-wrap .applications-current {
+    float: left;
+}
+
+/*최대 신청 인원*/
+
+.applications-wrap .applications-maximum {
+    float: right;
+}
+
+.applications-wrap span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.applications-wrap p {
+    font-size: 40px;
+    font-family: 'NanumSquareEB';
+}
+
+.training-card-wrap .course-amount {
+    display: block;
+    font-size: 24px;
+    font-family: 'NanumSquareEB';
+    line-height: 70px;
+    color: #F7BF38;
+}
+
+.training-card-wrap .course-button {
+    display: block;
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #F7BF38;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+     -webkit-box-shadow: 5px 15px 30px rgba(237, 180, 53, 0.57);
+    box-shadow: 5px 15px 30px rgba(237, 180, 53, 0.57);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.training-card-wrap .course-button:hover {
+    box-shadow: none;
+}
+
+/*footer*/
+
+#hacking-footer-wrap {
+    width: 100%;
+    height: 500px;
+    background-color: #F7BF38;
+
+}
+
+#hacking-footer-wrap .hacking-footer-center {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+
+
+#hacking-footer-wrap .hacking-footer-center .hacking-if-area {
+    float:left;
+    margin-right: 150px;
+
+}
+
+#hacking-footer-wrap .hacking-footer-center .hacking-if-area:last-child {
+    margin-right: 0px;
+
+}
+
+.hacking-footer-center .hacking-if-area span {
+    display: block;
+    font-family: 'NanumSquareEB';
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hacking-footer-center .hacking-if-area p {
+    color: #b27909;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.hacking-footer-center .hacking-if-area .hacking-if-margin {
+    margin-bottom: 50px;
+}
+
+.hacking-footer-center .hacking-if-area > a {
+    font-family: 'NanumSquareEB';
+    display: block;
+    color: white;
+    margin-top: 30px;
+
+}
+
+#hacking-footer-wrap .footer-copyright {
+    text-align: center;
+    background-color: #edb435;
+    color: #b27909;
+    padding: 30px 0;
+}
